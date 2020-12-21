@@ -475,12 +475,7 @@
             reject(e)
           })
 
-          // try to load the media thumbnail
-          let append = '?'
-          if (this.media.thumbnail.indexOf('?') > -1) {
-            append = '&'
-          }
-          this.img.src = this.media.thumbnail + append + 'no-cache'
+          this.img.src = this.media.thumbnail
         })
       },
       showDefaultThumbnail: function () {
